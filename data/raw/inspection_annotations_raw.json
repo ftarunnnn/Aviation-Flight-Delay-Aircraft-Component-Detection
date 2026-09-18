@@ -1,0 +1,841 @@
+[
+  {
+    "image_id": "IMG-001",
+    "filename": "inspection_img_001.jpg",
+    "component": "Fuselage Panel",
+    "defects": [
+      {
+        "defect_type": "Turbine Blade Erosion",
+        "bbox": [
+          331,
+          348,
+          103,
+          98
+        ],
+        "severity": "Moderate",
+        "confidence_ground_truth": 0.94
+      }
+    ],
+    "inspection_date": "2026-02-02",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-002",
+    "filename": "inspection_img_002.jpg",
+    "component": "Landing Gear Structure",
+    "defects": [
+      {
+        "defect_type": "Turbine Blade Erosion",
+        "bbox": [
+          371,
+          300,
+          46,
+          94
+        ],
+        "severity": "Critical",
+        "confidence_ground_truth": 0.89
+      }
+    ],
+    "inspection_date": "2026-02-03",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-003",
+    "filename": "inspection_img_003.jpg",
+    "component": "Landing Gear Structure",
+    "defects": [
+      {
+        "defect_type": "Turbine Blade Erosion",
+        "bbox": [
+          142,
+          112,
+          55,
+          57
+        ],
+        "severity": "Moderate",
+        "confidence_ground_truth": 0.96
+      },
+      {
+        "defect_type": "Rivet Corrosion",
+        "bbox": [
+          192,
+          105,
+          45,
+          48
+        ],
+        "severity": "Critical",
+        "confidence_ground_truth": 0.94
+      }
+    ],
+    "inspection_date": "2026-02-04",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-004",
+    "filename": "inspection_img_004.jpg",
+    "component": "Turbine Blade",
+    "defects": [
+      {
+        "defect_type": "Wing Surface Dent",
+        "bbox": [
+          506,
+          388,
+          66,
+          45
+        ],
+        "severity": "Critical",
+        "confidence_ground_truth": 0.89
+      }
+    ],
+    "inspection_date": "2026-02-05",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-005",
+    "filename": "inspection_img_005.jpg",
+    "component": "Fuselage Panel",
+    "defects": [
+      {
+        "defect_type": "Composite Delamination",
+        "bbox": [
+          270,
+          173,
+          75,
+          76
+        ],
+        "severity": "Minor",
+        "confidence_ground_truth": 0.9
+      },
+      {
+        "defect_type": "Composite Delamination",
+        "bbox": [
+          332,
+          231,
+          113,
+          74
+        ],
+        "severity": "Minor",
+        "confidence_ground_truth": 0.9
+      }
+    ],
+    "inspection_date": "2026-02-06",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-006",
+    "filename": "inspection_img_006.jpg",
+    "component": "Engine Cowling",
+    "defects": [
+      {
+        "defect_type": "Turbine Blade Erosion",
+        "bbox": [
+          462,
+          472,
+          68,
+          61
+        ],
+        "severity": "Moderate",
+        "confidence_ground_truth": 0.9
+      },
+      {
+        "defect_type": "Composite Delamination",
+        "bbox": [
+          96,
+          342,
+          42,
+          60
+        ],
+        "severity": "Critical",
+        "confidence_ground_truth": 0.95
+      },
+      {
+        "defect_type": "Turbine Blade Erosion",
+        "bbox": [
+          98,
+          176,
+          102,
+          55
+        ],
+        "severity": "Moderate",
+        "confidence_ground_truth": 0.9
+      }
+    ],
+    "inspection_date": "2026-02-07",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-007",
+    "filename": "inspection_img_007.jpg",
+    "component": "Landing Gear Structure",
+    "defects": [
+      {
+        "defect_type": "Fuselage Crack",
+        "bbox": [
+          193,
+          104,
+          62,
+          68
+        ],
+        "severity": "Minor",
+        "confidence_ground_truth": 0.91
+      },
+      {
+        "defect_type": "Turbine Blade Erosion",
+        "bbox": [
+          490,
+          357,
+          95,
+          114
+        ],
+        "severity": "Moderate",
+        "confidence_ground_truth": 0.93
+      },
+      {
+        "defect_type": "Fuselage Crack",
+        "bbox": [
+          259,
+          414,
+          52,
+          50
+        ],
+        "severity": "Moderate",
+        "confidence_ground_truth": 0.93
+      }
+    ],
+    "inspection_date": "2026-02-08",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-008",
+    "filename": "inspection_img_008.jpg",
+    "component": "Landing Gear Structure",
+    "defects": [
+      {
+        "defect_type": "Wing Surface Dent",
+        "bbox": [
+          441,
+          189,
+          42,
+          109
+        ],
+        "severity": "Minor",
+        "confidence_ground_truth": 0.98
+      },
+      {
+        "defect_type": "Wing Surface Dent",
+        "bbox": [
+          225,
+          214,
+          95,
+          107
+        ],
+        "severity": "Minor",
+        "confidence_ground_truth": 0.93
+      },
+      {
+        "defect_type": "Composite Delamination",
+        "bbox": [
+          360,
+          155,
+          89,
+          96
+        ],
+        "severity": "Moderate",
+        "confidence_ground_truth": 0.9
+      }
+    ],
+    "inspection_date": "2026-02-09",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-009",
+    "filename": "inspection_img_009.jpg",
+    "component": "Fuselage Panel",
+    "defects": [
+      {
+        "defect_type": "Wing Surface Dent",
+        "bbox": [
+          156,
+          161,
+          61,
+          91
+        ],
+        "severity": "Moderate",
+        "confidence_ground_truth": 0.92
+      },
+      {
+        "defect_type": "Turbine Blade Erosion",
+        "bbox": [
+          510,
+          168,
+          71,
+          77
+        ],
+        "severity": "Moderate",
+        "confidence_ground_truth": 0.95
+      },
+      {
+        "defect_type": "Wing Surface Dent",
+        "bbox": [
+          174,
+          380,
+          43,
+          112
+        ],
+        "severity": "Critical",
+        "confidence_ground_truth": 0.89
+      }
+    ],
+    "inspection_date": "2026-02-10",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-010",
+    "filename": "inspection_img_010.jpg",
+    "component": "Fuselage Panel",
+    "defects": [
+      {
+        "defect_type": "Composite Delamination",
+        "bbox": [
+          245,
+          60,
+          84,
+          86
+        ],
+        "severity": "Moderate",
+        "confidence_ground_truth": 0.93
+      },
+      {
+        "defect_type": "Wing Surface Dent",
+        "bbox": [
+          273,
+          180,
+          94,
+          51
+        ],
+        "severity": "Moderate",
+        "confidence_ground_truth": 0.91
+      }
+    ],
+    "inspection_date": "2026-02-11",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-011",
+    "filename": "inspection_img_011.jpg",
+    "component": "Wing Surface",
+    "defects": [
+      {
+        "defect_type": "Wing Surface Dent",
+        "bbox": [
+          162,
+          487,
+          60,
+          61
+        ],
+        "severity": "Critical",
+        "confidence_ground_truth": 0.95
+      },
+      {
+        "defect_type": "Composite Delamination",
+        "bbox": [
+          483,
+          68,
+          107,
+          65
+        ],
+        "severity": "Moderate",
+        "confidence_ground_truth": 0.92
+      }
+    ],
+    "inspection_date": "2026-02-12",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-012",
+    "filename": "inspection_img_012.jpg",
+    "component": "Turbine Blade",
+    "defects": [
+      {
+        "defect_type": "Fuselage Crack",
+        "bbox": [
+          406,
+          333,
+          51,
+          118
+        ],
+        "severity": "Minor",
+        "confidence_ground_truth": 0.91
+      }
+    ],
+    "inspection_date": "2026-02-13",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-013",
+    "filename": "inspection_img_013.jpg",
+    "component": "Engine Cowling",
+    "defects": [
+      {
+        "defect_type": "Wing Surface Dent",
+        "bbox": [
+          122,
+          489,
+          59,
+          77
+        ],
+        "severity": "Moderate",
+        "confidence_ground_truth": 0.91
+      },
+      {
+        "defect_type": "Fuselage Crack",
+        "bbox": [
+          209,
+          135,
+          69,
+          92
+        ],
+        "severity": "Critical",
+        "confidence_ground_truth": 0.89
+      }
+    ],
+    "inspection_date": "2026-02-14",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-014",
+    "filename": "inspection_img_014.jpg",
+    "component": "Fuselage Panel",
+    "defects": [
+      {
+        "defect_type": "Rivet Corrosion",
+        "bbox": [
+          197,
+          330,
+          113,
+          62
+        ],
+        "severity": "Moderate",
+        "confidence_ground_truth": 0.98
+      },
+      {
+        "defect_type": "Fuselage Crack",
+        "bbox": [
+          463,
+          542,
+          70,
+          42
+        ],
+        "severity": "Minor",
+        "confidence_ground_truth": 0.95
+      },
+      {
+        "defect_type": "Rivet Corrosion",
+        "bbox": [
+          187,
+          468,
+          48,
+          52
+        ],
+        "severity": "Minor",
+        "confidence_ground_truth": 0.94
+      }
+    ],
+    "inspection_date": "2026-02-15",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-015",
+    "filename": "inspection_img_015.jpg",
+    "component": "Landing Gear Structure",
+    "defects": [
+      {
+        "defect_type": "Turbine Blade Erosion",
+        "bbox": [
+          323,
+          527,
+          62,
+          59
+        ],
+        "severity": "Minor",
+        "confidence_ground_truth": 0.91
+      },
+      {
+        "defect_type": "Rivet Corrosion",
+        "bbox": [
+          442,
+          189,
+          81,
+          61
+        ],
+        "severity": "Critical",
+        "confidence_ground_truth": 0.97
+      },
+      {
+        "defect_type": "Composite Delamination",
+        "bbox": [
+          251,
+          119,
+          104,
+          47
+        ],
+        "severity": "Minor",
+        "confidence_ground_truth": 0.89
+      }
+    ],
+    "inspection_date": "2026-02-16",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-016",
+    "filename": "inspection_img_016.jpg",
+    "component": "Turbine Blade",
+    "defects": [
+      {
+        "defect_type": "Fuselage Crack",
+        "bbox": [
+          343,
+          450,
+          117,
+          87
+        ],
+        "severity": "Moderate",
+        "confidence_ground_truth": 0.93
+      }
+    ],
+    "inspection_date": "2026-02-17",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-017",
+    "filename": "inspection_img_017.jpg",
+    "component": "Landing Gear Structure",
+    "defects": [
+      {
+        "defect_type": "Rivet Corrosion",
+        "bbox": [
+          377,
+          360,
+          71,
+          60
+        ],
+        "severity": "Minor",
+        "confidence_ground_truth": 0.89
+      }
+    ],
+    "inspection_date": "2026-02-18",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-018",
+    "filename": "inspection_img_018.jpg",
+    "component": "Landing Gear Structure",
+    "defects": [
+      {
+        "defect_type": "Rivet Corrosion",
+        "bbox": [
+          320,
+          459,
+          76,
+          98
+        ],
+        "severity": "Moderate",
+        "confidence_ground_truth": 0.95
+      }
+    ],
+    "inspection_date": "2026-02-19",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-019",
+    "filename": "inspection_img_019.jpg",
+    "component": "Landing Gear Structure",
+    "defects": [
+      {
+        "defect_type": "Composite Delamination",
+        "bbox": [
+          288,
+          381,
+          91,
+          107
+        ],
+        "severity": "Critical",
+        "confidence_ground_truth": 0.92
+      },
+      {
+        "defect_type": "Composite Delamination",
+        "bbox": [
+          434,
+          178,
+          113,
+          91
+        ],
+        "severity": "Critical",
+        "confidence_ground_truth": 0.98
+      },
+      {
+        "defect_type": "Fuselage Crack",
+        "bbox": [
+          114,
+          462,
+          104,
+          103
+        ],
+        "severity": "Minor",
+        "confidence_ground_truth": 0.9
+      }
+    ],
+    "inspection_date": "2026-02-20",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-020",
+    "filename": "inspection_img_020.jpg",
+    "component": "Engine Cowling",
+    "defects": [
+      {
+        "defect_type": "Turbine Blade Erosion",
+        "bbox": [
+          512,
+          261,
+          54,
+          117
+        ],
+        "severity": "Moderate",
+        "confidence_ground_truth": 0.92
+      },
+      {
+        "defect_type": "Turbine Blade Erosion",
+        "bbox": [
+          299,
+          151,
+          43,
+          80
+        ],
+        "severity": "Minor",
+        "confidence_ground_truth": 0.9
+      }
+    ],
+    "inspection_date": "2026-02-21",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-021",
+    "filename": "inspection_img_021.jpg",
+    "component": "Turbine Blade",
+    "defects": [
+      {
+        "defect_type": "Composite Delamination",
+        "bbox": [
+          252,
+          175,
+          57,
+          78
+        ],
+        "severity": "Minor",
+        "confidence_ground_truth": 0.88
+      },
+      {
+        "defect_type": "Fuselage Crack",
+        "bbox": [
+          299,
+          254,
+          96,
+          72
+        ],
+        "severity": "Moderate",
+        "confidence_ground_truth": 0.96
+      }
+    ],
+    "inspection_date": "2026-02-22",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-022",
+    "filename": "inspection_img_022.jpg",
+    "component": "Wing Surface",
+    "defects": [
+      {
+        "defect_type": "Wing Surface Dent",
+        "bbox": [
+          76,
+          175,
+          56,
+          93
+        ],
+        "severity": "Minor",
+        "confidence_ground_truth": 0.98
+      }
+    ],
+    "inspection_date": "2026-02-23",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-023",
+    "filename": "inspection_img_023.jpg",
+    "component": "Fuselage Panel",
+    "defects": [
+      {
+        "defect_type": "Turbine Blade Erosion",
+        "bbox": [
+          288,
+          247,
+          46,
+          84
+        ],
+        "severity": "Critical",
+        "confidence_ground_truth": 0.98
+      },
+      {
+        "defect_type": "Rivet Corrosion",
+        "bbox": [
+          231,
+          470,
+          116,
+          77
+        ],
+        "severity": "Critical",
+        "confidence_ground_truth": 0.94
+      }
+    ],
+    "inspection_date": "2026-02-24",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-024",
+    "filename": "inspection_img_024.jpg",
+    "component": "Fuselage Panel",
+    "defects": [
+      {
+        "defect_type": "Rivet Corrosion",
+        "bbox": [
+          149,
+          208,
+          85,
+          82
+        ],
+        "severity": "Critical",
+        "confidence_ground_truth": 0.9
+      },
+      {
+        "defect_type": "Rivet Corrosion",
+        "bbox": [
+          188,
+          80,
+          58,
+          111
+        ],
+        "severity": "Minor",
+        "confidence_ground_truth": 0.94
+      }
+    ],
+    "inspection_date": "2026-02-25",
+    "resolution": [
+      640,
+      640
+    ]
+  },
+  {
+    "image_id": "IMG-025",
+    "filename": "inspection_img_025.jpg",
+    "component": "Engine Cowling",
+    "defects": [
+      {
+        "defect_type": "Rivet Corrosion",
+        "bbox": [
+          221,
+          458,
+          97,
+          91
+        ],
+        "severity": "Critical",
+        "confidence_ground_truth": 0.93
+      },
+      {
+        "defect_type": "Composite Delamination",
+        "bbox": [
+          238,
+          76,
+          81,
+          76
+        ],
+        "severity": "Critical",
+        "confidence_ground_truth": 0.94
+      }
+    ],
+    "inspection_date": "2026-02-26",
+    "resolution": [
+      640,
+      640
+    ]
+  }
+]
