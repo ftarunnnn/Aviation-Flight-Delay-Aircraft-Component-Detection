@@ -1,0 +1,31 @@
+{
+  "model_type": "XGBoost",
+  "regression_metrics": {
+    "MAE_minutes": 9.35,
+    "RMSE_minutes": 11.94,
+    "R2_score": 0.7377
+  },
+  "classification_metrics": {
+    "accuracy": 0.8,
+    "precision": 0.7929,
+    "recall": 0.8,
+    "f1_score": 0.794,
+    "confusion_matrix": [
+      [
+        7,
+        7,
+        0
+      ],
+      [
+        4,
+        52,
+        25
+      ],
+      [
+        0,
+        12,
+        133
+      ]
+    ]
+  }
+}
