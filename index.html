@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aviation — Flight Delay & Aircraft Component Detection</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Chart.js for EDA & Evaluation visualizer -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        ✈️ <span>Aviation Intelligence</span>
+        <span class="badge">10-Phase Pipeline</span>
+      </div>
+      <nav>
+        <button class="nav-btn active" onclick="switchTab('overview')">🌐 Architecture</button>
+        <button class="nav-btn" onclick="switchTab('ml-delay')">✈️ Flight Delay ML</button>
+        <button class="nav-btn" onclick="switchTab('dl-defect')">🔧 Component Defect DL</button>
+        <button class="nav-btn" onclick="switchTab('eda-studio')">📊 EDA Studio</button>
+        <button class="nav-btn" onclick="switchTab('metrics')">📈 Performance</button>
+        <button class="nav-btn" onclick="switchTab('api-sandbox')">⚡ API Console</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main>
+
+    <!-- Tab 1: 10-Phase Architecture Overview -->
+    <section id="overview" class="tab-content active">
+      <div class="section-header">
+        <h1>✈️ System Architecture & 10-Phase Pipeline</h1>
+        <p>End-to-End Flight Operational Delay Prediction & Computer Vision Aircraft Defect Detection</p>
+      </div>
+
+      <div class="phase-timeline">
+        <div class="phase-box done">
+          <div class="phase-num">Phase 1</div>
+          <div class="phase-title">Data Collection</div>
+          <div class="phase-desc">1,200+ flight records & inspection image metadata</div>
+        </div>
+        <div class="phase-box done">
+          <div class="phase-num">Phase 2</div>
+          <div class="phase-title">Data Preprocessing</div>
+          <div class="phase-desc">Cleaning, encoding & image normalization</div>
+        </div>
+        <div class="phase-box done">
+          <div class="phase-num">Phase 3</div>
+          <div class="phase-title">EDA</div>
+          <div class="phase-desc">Weather impact & defect frequency plots</div>
+        </div>
+        <div class="phase-box done">
+          <div class="phase-num">Phase 4</div>
+          <div class="phase-title">Feature Engineering</div>
+          <div class="phase-desc">Congestion risk & wear indicators</div>
+        </div>
+        <div class="phase-box done">
+          <div class="phase-num">Phase 5</div>
+          <div class="phase-title">ML Model Training</div>
+          <div class="phase-desc">Random Forest & XGBoost delay models</div>
+        </div>
+        <div class="phase-box done">
+          <div class="phase-num">Phase 6</div>
+          <div class="phase-title">ML Evaluation</div>
+          <div class="phase-desc">MAE: 9.35m, Accuracy: 80%</div>
+        </div>
+        <div class="phase-box done">
+          <div class="phase-num">Phase 7</div>
+          <div class="phase-title">DL Image Prep</div>
+          <div class="phase-desc">Image augmentation & YOLO format</div>
+        </div>
+        <div class="phase-box done">
+          <div class="phase-num">Phase 8</div>
+          <div class="phase-title">DL Model Training</div>
+          <div class="phase-desc">PyTorch CNN Defect Classifier</div>
+        </div>
+        <div class="phase-box done">
+          <div class="phase-num">Phase 9</div>
+          <div class="phase-title">DL Evaluation</div>
+          <div class="phase-desc">IoU: 0.49, mAP@0.5: 0.63</div>
+        </div>
+        <div class="phase-box done">
+          <div class="phase-num">Phase 10</div>
+          <div class="phase-title">Deployment</div>
+          <div class="phase-desc">FastAPI Backend & Dashboard</div>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">🔄 Pipeline A: Flight Delay ML Prediction</div>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;">
+            Processes flight operational metrics, temporal features, weather severity, and traffic congestion data through XGBoost & Random Forest regressors/classifiers to estimate departure delay times and categorize risk levels.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-title">🔍 Pipeline B: Aircraft Component Defect Detection</div>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;">
+            Evaluates high-resolution aircraft inspection panels (fuselage, turbine blades, wing surfaces) using PyTorch CNN and YOLO object detectors to identify defect types, bounding box coordinates, and repair severity.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 2: Flight Delay ML Prediction -->
+    <section id="ml-delay" class="tab-content">
+      <div class="section-header">
+        <h1>✈️ Flight Departure Delay Risk Predictor</h1>
+        <p>Interactive Machine Learning Inference Engine (Phases 1-6)</p>
+      </div>
+
+      <div class="grid-2">
+        <!-- Input Form -->
+        <div class="card">
+          <div class="card-title">Operational Flight Parameters</div>
+          <form id="delayForm" onsubmit="runDelayPrediction(event)">
+            <div class="grid-2">
+              <div class="form-group">
+                <label>Airline Carrier</label>
+                <select id="airline">
+                  <option value="SkyWings">SkyWings</option>
+                  <option value="AeroGlobal">AeroGlobal</option>
+                  <option value="JetExpress">JetExpress</option>
+                  <option value="OceanicAir">OceanicAir</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Weather Condition</label>
+                <select id="weather">
+                  <option value="Clear">Clear (Severity 1.0)</option>
+                  <option value="Rain">Rain (Severity 5.0)</option>
+                  <option value="Fog">Fog (Severity 6.5)</option>
+                  <option value="Thunderstorm" selected>Thunderstorm (Severity 10.0)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div class="form-group">
+                <label>Airport Traffic Index (1 - 10)</label>
+                <input type="number" id="traffic" class="form-control" min="1" max="10" step="0.1" value="8.5">
+              </div>
+              <div class="form-group">
+                <label>Prior Leg Inbound Delay (Mins)</label>
+                <input type="number" id="priorDelay" class="form-control" min="0" max="180" value="35">
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div class="form-group">
+                <label>Aircraft Age (Years)</label>
+                <input type="number" id="aircraftAge" class="form-control" min="0.5" max="30" step="0.5" value="14.5">
+              </div>
+              <div class="form-group">
+                <label>Maintenance Overdue</label>
+                <select id="maintOverdue">
+                  <option value="0">No (Scheduled)</option>
+                  <option value="1">Yes (Overdue Inspection)</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-primary">⚡ Predict Flight Delay Risk</button>
+          </form>
+        </div>
+
+        <!-- Prediction Result Output -->
+        <div class="card" id="delayResultCard">
+          <div class="card-title">ML Inference Prediction Output</div>
+          <div style="text-align: center; margin: 1.5rem 0;">
+            <div id="riskBadge" class="risk-badge risk-high">High Delay Risk</div>
+            <div style="font-size: 3rem; font-weight: 700; color: var(--accent-cyan); margin-top: 0.5rem;" id="delayMins">
+              42.5 <span style="font-size: 1.2rem; color: var(--text-secondary);">Mins Delay</span>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.25rem;">XGBoost / Random Forest Model Confidence: 91.4%</p>
+          </div>
+
+          <div style="margin-top: 1.5rem;">
+            <div style="font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem;">Top Contributing Features:</div>
+            <div style="background: rgba(15, 23, 42, 0.6); padding: 0.85rem; border-radius: var(--radius-sm); font-size: 0.85rem;">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.4rem;">
+                <span>1. Airport Congestion Risk Score</span>
+                <span style="color: var(--accent-cyan); font-weight: 600;">38.5%</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.4rem;">
+                <span>2. Weather Severity Index (Thunderstorm)</span>
+                <span style="color: var(--accent-cyan); font-weight: 600;">29.2%</span>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span>3. Inbound Turnaround Delay</span>
+                <span style="color: var(--accent-cyan); font-weight: 600;">21.8%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 3: Component Defect DL Detector -->
+    <section id="dl-defect" class="tab-content">
+      <div class="section-header">
+        <h1>🔧 Aircraft Component Defect Localization & Classification</h1>
+        <p>Deep Learning Computer Vision Canvas Visualizer (Phases 7-9)</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Inspection Canvas Visualizer (YOLO & CNN)</div>
+          <div class="canvas-container">
+            <canvas id="defectCanvas" width="640" height="640"></canvas>
+          </div>
+          <div class="sample-thumbs">
+            <button class="thumb-btn active" onclick="loadSampleDefect('fuselage')">Fuselage Panel</button>
+            <button class="thumb-btn" onclick="loadSampleDefect('turbine')">Turbine Blade</button>
+            <button class="thumb-btn" onclick="loadSampleDefect('wing')">Wing Surface</button>
+            <button class="thumb-btn" onclick="loadSampleDefect('engine')">Engine Cowling</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Defect Diagnostics & Bounding Box Details</div>
+          <div id="defectDetails" style="display: flex; flex-direction: column; gap: 1rem;">
+            <div style="background: rgba(15, 23, 42, 0.6); padding: 1rem; border-radius: var(--radius-md); border-left: 4px solid var(--accent-amber);">
+              <div style="font-size: 1.1rem; font-weight: 700; color: var(--accent-amber);" id="defectName">Rivet Corrosion & Structural Crack</div>
+              <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.25rem;">Component Region: <span id="compRegion" style="color: #fff;">Fuselage Upper Panel</span></div>
+            </div>
+
+            <div class="grid-2">
+              <div style="background: rgba(255, 255, 255, 0.03); padding: 0.85rem; border-radius: var(--radius-sm);">
+                <div style="font-size: 0.8rem; color: var(--text-secondary);">Detection Confidence</div>
+                <div style="font-size: 1.4rem; font-weight: 700; color: var(--accent-cyan);" id="defectConf">94.8%</div>
+              </div>
+              <div style="background: rgba(255, 255, 255, 0.03); padding: 0.85rem; border-radius: var(--radius-sm);">
+                <div style="font-size: 0.8rem; color: var(--text-secondary);">Severity Level</div>
+                <div style="font-size: 1.4rem; font-weight: 700; color: var(--accent-rose);" id="defectSev">Critical</div>
+              </div>
+            </div>
+
+            <div>
+              <div style="font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem;">Predicted Bounding Box Coordinates (YOLO format):</div>
+              <pre><code id="bboxCode">[x_center: 0.482, y_center: 0.315, width: 0.185, height: 0.142]</code></pre>
+            </div>
+
+            <div>
+              <div style="font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem;">Maintenance Action Recommendation:</div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);" id="maintAction">
+                Immediate non-destructive ultrasonic testing required before flight sign-off. High probability of stress corrosion cracking.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 4: EDA Studio -->
+    <section id="eda-studio" class="tab-content">
+      <div class="section-header">
+        <h1>📊 Operational Analytics & EDA Studio</h1>
+        <p>Exploratory Data Analysis Graphs & Statistical Distributions (Phase 3)</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Average Delay Minutes by Weather Condition</div>
+          <canvas id="weatherChart" height="220"></canvas>
+        </div>
+        <div class="card">
+          <div class="card-title">Aircraft Defect Type Frequencies</div>
+          <canvas id="defectChart" height="220"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 5: Performance & Evaluation Matrix -->
+    <section id="metrics" class="tab-content">
+      <div class="section-header">
+        <h1>📈 Model Evaluation & Performance Matrix</h1>
+        <p>Machine Learning (Phase 6) & Deep Learning (Phase 9) Performance Metrics</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">✈️ ML Flight Delay Model Performance</div>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem;">
+              <span>Mean Absolute Error (MAE)</span>
+              <span style="font-weight: 700; color: var(--accent-cyan);">9.35 Mins</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem;">
+              <span>Root Mean Squared Error (RMSE)</span>
+              <span style="font-weight: 700; color: var(--accent-cyan);">11.94 Mins</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem;">
+              <span>R² Variance Score</span>
+              <span style="font-weight: 700; color: var(--accent-green);">0.7377</span>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+              <span>Classification Accuracy</span>
+              <span style="font-weight: 700; color: var(--accent-green);">80.00%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">🔧 DL Defect Localization Performance</div>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem;">
+              <span>Intersection over Union (Mean IoU)</span>
+              <span style="font-weight: 700; color: var(--accent-cyan);">0.4890</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem;">
+              <span>mAP@0.5 (mean Average Precision)</span>
+              <span style="font-weight: 700; color: var(--accent-green);">0.6327</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem;">
+              <span>Localization Precision</span>
+              <span style="font-weight: 700; color: var(--accent-green);">0.5947</span>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+              <span>Localization Recall</span>
+              <span style="font-weight: 700; color: var(--accent-green);">0.5757</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 6: API Sandbox Console -->
+    <section id="api-sandbox" class="tab-content">
+      <div class="section-header">
+        <h1>⚡ FastAPI Backend Endpoint Sandbox</h1>
+        <p>Phase 10 Production REST API Testing Client</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">FastAPI Service Endpoint Specifications</div>
+        <pre><code>POST http://localhost:8000/api/v1/predict-delay
+Content-Type: application/json
+
+{
+  "airline_code": 1,
+  "weather_code": 3,
+  "traffic_norm": 0.85,
+  "prior_leg_delay_min": 35,
+  "aircraft_age_years": 14.5,
+  "maintenance_overdue_flag": 0
+}
+
+Response (200 OK):
+{
+  "predicted_departure_delay_minutes": 42.5,
+  "delay_risk_class_code": 2,
+  "delay_risk_category": "Severe Delay Risk",
+  "confidence_score": 0.914
+}</code></pre>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
