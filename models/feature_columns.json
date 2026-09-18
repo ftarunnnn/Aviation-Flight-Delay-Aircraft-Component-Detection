@@ -1,0 +1,23 @@
+{
+  "features": [
+    "airline_code",
+    "weather_code",
+    "temp_norm",
+    "wind_norm",
+    "traffic_norm",
+    "prior_leg_delay_min",
+    "aircraft_age_years",
+    "maintenance_overdue_flag",
+    "dep_hour",
+    "dep_day_of_week",
+    "is_weekend",
+    "is_peak_hours",
+    "weather_severity_score",
+    "congestion_risk_score",
+    "aircraft_wear_index",
+    "prior_delay_ratio"
+  ],
+  "feature_count": 16,
+  "train_samples": 960,
+  "test_samples": 240
+}
