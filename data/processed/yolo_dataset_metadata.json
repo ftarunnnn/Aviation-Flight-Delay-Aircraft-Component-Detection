@@ -1,0 +1,262 @@
+{
+  "class_mapping": {
+    "Rivet Corrosion": 0,
+    "Fuselage Crack": 1,
+    "Turbine Blade Erosion": 2,
+    "Wing Surface Dent": 3,
+    "Composite Delamination": 4
+  },
+  "total_augmented_images": 75,
+  "records": [
+    {
+      "base_image_id": "IMG-001",
+      "augmented_files": [
+        "inspection_img_001_orig.jpg",
+        "inspection_img_001_flip.jpg",
+        "inspection_img_001_bright.jpg"
+      ],
+      "component": "Fuselage Panel",
+      "num_defects": 1
+    },
+    {
+      "base_image_id": "IMG-002",
+      "augmented_files": [
+        "inspection_img_002_orig.jpg",
+        "inspection_img_002_flip.jpg",
+        "inspection_img_002_bright.jpg"
+      ],
+      "component": "Landing Gear Structure",
+      "num_defects": 1
+    },
+    {
+      "base_image_id": "IMG-003",
+      "augmented_files": [
+        "inspection_img_003_orig.jpg",
+        "inspection_img_003_flip.jpg",
+        "inspection_img_003_bright.jpg"
+      ],
+      "component": "Landing Gear Structure",
+      "num_defects": 2
+    },
+    {
+      "base_image_id": "IMG-004",
+      "augmented_files": [
+        "inspection_img_004_orig.jpg",
+        "inspection_img_004_flip.jpg",
+        "inspection_img_004_bright.jpg"
+      ],
+      "component": "Turbine Blade",
+      "num_defects": 1
+    },
+    {
+      "base_image_id": "IMG-005",
+      "augmented_files": [
+        "inspection_img_005_orig.jpg",
+        "inspection_img_005_flip.jpg",
+        "inspection_img_005_bright.jpg"
+      ],
+      "component": "Fuselage Panel",
+      "num_defects": 2
+    },
+    {
+      "base_image_id": "IMG-006",
+      "augmented_files": [
+        "inspection_img_006_orig.jpg",
+        "inspection_img_006_flip.jpg",
+        "inspection_img_006_bright.jpg"
+      ],
+      "component": "Engine Cowling",
+      "num_defects": 3
+    },
+    {
+      "base_image_id": "IMG-007",
+      "augmented_files": [
+        "inspection_img_007_orig.jpg",
+        "inspection_img_007_flip.jpg",
+        "inspection_img_007_bright.jpg"
+      ],
+      "component": "Landing Gear Structure",
+      "num_defects": 3
+    },
+    {
+      "base_image_id": "IMG-008",
+      "augmented_files": [
+        "inspection_img_008_orig.jpg",
+        "inspection_img_008_flip.jpg",
+        "inspection_img_008_bright.jpg"
+      ],
+      "component": "Landing Gear Structure",
+      "num_defects": 3
+    },
+    {
+      "base_image_id": "IMG-009",
+      "augmented_files": [
+        "inspection_img_009_orig.jpg",
+        "inspection_img_009_flip.jpg",
+        "inspection_img_009_bright.jpg"
+      ],
+      "component": "Fuselage Panel",
+      "num_defects": 3
+    },
+    {
+      "base_image_id": "IMG-010",
+      "augmented_files": [
+        "inspection_img_010_orig.jpg",
+        "inspection_img_010_flip.jpg",
+        "inspection_img_010_bright.jpg"
+      ],
+      "component": "Fuselage Panel",
+      "num_defects": 2
+    },
+    {
+      "base_image_id": "IMG-011",
+      "augmented_files": [
+        "inspection_img_011_orig.jpg",
+        "inspection_img_011_flip.jpg",
+        "inspection_img_011_bright.jpg"
+      ],
+      "component": "Wing Surface",
+      "num_defects": 2
+    },
+    {
+      "base_image_id": "IMG-012",
+      "augmented_files": [
+        "inspection_img_012_orig.jpg",
+        "inspection_img_012_flip.jpg",
+        "inspection_img_012_bright.jpg"
+      ],
+      "component": "Turbine Blade",
+      "num_defects": 1
+    },
+    {
+      "base_image_id": "IMG-013",
+      "augmented_files": [
+        "inspection_img_013_orig.jpg",
+        "inspection_img_013_flip.jpg",
+        "inspection_img_013_bright.jpg"
+      ],
+      "component": "Engine Cowling",
+      "num_defects": 2
+    },
+    {
+      "base_image_id": "IMG-014",
+      "augmented_files": [
+        "inspection_img_014_orig.jpg",
+        "inspection_img_014_flip.jpg",
+        "inspection_img_014_bright.jpg"
+      ],
+      "component": "Fuselage Panel",
+      "num_defects": 3
+    },
+    {
+      "base_image_id": "IMG-015",
+      "augmented_files": [
+        "inspection_img_015_orig.jpg",
+        "inspection_img_015_flip.jpg",
+        "inspection_img_015_bright.jpg"
+      ],
+      "component": "Landing Gear Structure",
+      "num_defects": 3
+    },
+    {
+      "base_image_id": "IMG-016",
+      "augmented_files": [
+        "inspection_img_016_orig.jpg",
+        "inspection_img_016_flip.jpg",
+        "inspection_img_016_bright.jpg"
+      ],
+      "component": "Turbine Blade",
+      "num_defects": 1
+    },
+    {
+      "base_image_id": "IMG-017",
+      "augmented_files": [
+        "inspection_img_017_orig.jpg",
+        "inspection_img_017_flip.jpg",
+        "inspection_img_017_bright.jpg"
+      ],
+      "component": "Landing Gear Structure",
+      "num_defects": 1
+    },
+    {
+      "base_image_id": "IMG-018",
+      "augmented_files": [
+        "inspection_img_018_orig.jpg",
+        "inspection_img_018_flip.jpg",
+        "inspection_img_018_bright.jpg"
+      ],
+      "component": "Landing Gear Structure",
+      "num_defects": 1
+    },
+    {
+      "base_image_id": "IMG-019",
+      "augmented_files": [
+        "inspection_img_019_orig.jpg",
+        "inspection_img_019_flip.jpg",
+        "inspection_img_019_bright.jpg"
+      ],
+      "component": "Landing Gear Structure",
+      "num_defects": 3
+    },
+    {
+      "base_image_id": "IMG-020",
+      "augmented_files": [
+        "inspection_img_020_orig.jpg",
+        "inspection_img_020_flip.jpg",
+        "inspection_img_020_bright.jpg"
+      ],
+      "component": "Engine Cowling",
+      "num_defects": 2
+    },
+    {
+      "base_image_id": "IMG-021",
+      "augmented_files": [
+        "inspection_img_021_orig.jpg",
+        "inspection_img_021_flip.jpg",
+        "inspection_img_021_bright.jpg"
+      ],
+      "component": "Turbine Blade",
+      "num_defects": 2
+    },
+    {
+      "base_image_id": "IMG-022",
+      "augmented_files": [
+        "inspection_img_022_orig.jpg",
+        "inspection_img_022_flip.jpg",
+        "inspection_img_022_bright.jpg"
+      ],
+      "component": "Wing Surface",
+      "num_defects": 1
+    },
+    {
+      "base_image_id": "IMG-023",
+      "augmented_files": [
+        "inspection_img_023_orig.jpg",
+        "inspection_img_023_flip.jpg",
+        "inspection_img_023_bright.jpg"
+      ],
+      "component": "Fuselage Panel",
+      "num_defects": 2
+    },
+    {
+      "base_image_id": "IMG-024",
+      "augmented_files": [
+        "inspection_img_024_orig.jpg",
+        "inspection_img_024_flip.jpg",
+        "inspection_img_024_bright.jpg"
+      ],
+      "component": "Fuselage Panel",
+      "num_defects": 2
+    },
+    {
+      "base_image_id": "IMG-025",
+      "augmented_files": [
+        "inspection_img_025_orig.jpg",
+        "inspection_img_025_flip.jpg",
+        "inspection_img_025_bright.jpg"
+      ],
+      "component": "Engine Cowling",
+      "num_defects": 2
+    }
+  ]
+}
